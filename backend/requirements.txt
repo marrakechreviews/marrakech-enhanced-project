@@ -17,5 +17,5 @@ flask-jwt-extended==4.7.1
 python-dotenv==1.1.1
 dnspython==2.7.0
 gunicorn
-Pillow==11.3.0
 requests
+Pillow==11.3.0

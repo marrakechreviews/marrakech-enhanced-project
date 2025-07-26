@@ -17,7 +17,7 @@ app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'sta
 # Configuration
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'marrakech-reviews-secret-key-2025')
 app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECRET_KEY', 'jwt-secret-key-marrakech-2025')
-app.config['MONGO_URI'] = os.getenv('MONGO_URI', 'mongodb://localhost:27017/marrakech_reviews')
+app.config["MONGO_URI"] = os.getenv("MONGO_URI") # Remove the fallback
 
 # Initialize extensions
 mongo = PyMongo(app)
