@@ -64,7 +64,7 @@ git push -u origin main
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
    - **Install Command**: `npm install`
-
+npm install --legacy-peer-deps
 4. Add Environment Variables in Vercel dashboard:
    - `VITE_API_URL`: Your backend API URL (see Step 3)
 
