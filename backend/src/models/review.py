@@ -4,7 +4,7 @@ from datetime import datetime
 import os
 
 # MongoDB connection
-client = MongoClient(os.getenv('MONGODB_URI', 'mongodb://localhost:27017/'))
+client = MongoClient(os.getenv('MONGODB_URI'))
 db = client.marrakech_reviews
 reviews_collection = db.reviews
 

@@ -1,16 +1,28 @@
 {
   "version": 2,
-  "name": "marrakech-reviews-frontend",
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "installCommand": "npm install --legacy-peer-deps",
-  "framework": "vite",
+  "builds": [
+    {
+      "src": "dist/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "vercel_app.py",
+      "use": "@vercel/python"
+    }
+  ],
   "routes": [
     {
-      "src": "/[^.]+",
-      "dest": "/",
-      "status": 200
+      "src": "/api/(.*)",
+      "dest": "/vercel_app.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/dist/$1"
     }
-  ]
+  ],
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "JWT_SECRET_KEY": "@jwt_secret_key"
+  }
 }
 

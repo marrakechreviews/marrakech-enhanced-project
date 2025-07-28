@@ -178,3 +178,8 @@ The application has been thoroughly tested:
 
 **Congratulations!** Your Marrakech Reviews platform is ready for deployment. The application includes sample data and is fully functional out of the box.
 
+
+
+mongodb+srv://nextjs-amazona:koEsOBFpViQ1XWVP@cluster0.ycinh.mongodb.net/nextjs-amazona?retryWrites=true&w=majority&appName=Cluster0
+
+mongodb+srv://marrakechreviews:2zTFJhwNaKdbghYU@marrakechreviews.va1c9qf.mongodb.net/marrakechreviews?retryWrites=true&w=majority&tls=true&ssl=true

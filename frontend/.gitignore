@@ -1,0 +1,21 @@
+node_modules/
+.env
+.vercel
+
+# Dependency directories
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Build files
+.next/
+dist/
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
